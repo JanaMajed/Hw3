@@ -1,74 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Jana Majed</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* =========================
+   General Page Styling
+========================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f7f4ff, #edf2ff);
+    color: #2f2f3a;
+    position: relative;
+    overflow-x: hidden;
+}
 
-    <div class="background-circle circle-one"></div>
-    <div class="background-circle circle-two"></div>
-    <div class="background-circle circle-three"></div>
+/* =========================
+   Background Decorative Circles
+========================= */
+.background-circle {
+    position: fixed;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    border: 0.08rem solid rgba(170, 150, 220, 0.25);
+    z-index: -1;
+}
 
-    <header class="top-header">
-        <div class="logo">JM</div>
+.circle-one {
+    width: 13rem;
+    height: 13rem;
+    top: 7rem;
+    left: -3rem;
+}
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+.circle-two {
+    width: 9rem;
+    height: 9rem;
+    top: 20rem;
+    right: 2rem;
+}
 
-    <main>
-        <section class="hero-card">
-            <div class="hero-text">
-                <h1 id="top">Jana Majed Alamer</h1>
-                <p id="intro">Computer Science Student | Future Software Engineer</p>
+.circle-three {
+    width: 15rem;
+    height: 15rem;
+    bottom: 4rem;
+    right: -4rem;
+}
 
-                <h2>Professional Summary</h2>
-                <p>
-                    Computer Science student with a strong interest in problem-solving,
-                    artificial intelligence, and building efficient software solutions.
-                    I enjoy learning new technologies and turning ideas into practical projects.
-                </p>
+/* =========================
+   Header Styling
+========================= */
+.top-header {
+    width: 88%;
+    max-width: 75rem;
+    margin: 1.5rem auto 1rem auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(0.4rem);
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(76, 52, 120, 0.08);
+}
 
-                <div class="button-group">
-                    <a href="contact.html" class="btn primary-btn">Contact Me</a>
-                    <a href="projects.html" class="btn secondary-btn">View Projects</a>
-                </div>
-            </div>
+.logo {
+    background-color: #eee8ff;
+    color: #4b2e83;
+    font-weight: bold;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            <div class="hero-image">
-                <img src="marwed.png" alt="Profile Photo">
-            </div>
-        </section>
+nav {
+    display: flex;
+    gap: 1.2rem;
+}
 
-        <section class="content-card">
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Reading</li>
-                <li>Coding</li>
-                <li>Traveling</li>
-            </ul>
-        </section>
+nav a {
+    text-decoration: none;
+    color: #4b2e83;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.2rem;
+}
 
-        <section class="content-card">
-            <h2>My Goals</h2>
-            <ol>
-                <li>Graduate with honors</li>
-                <li>Continuously grow as a software engineer and AI specialist</li>
-            </ol>
-        </section>
-    </main>
+nav a:hover {
+    color: #7b68b3;
+}
 
-    <footer>
-        <p>© 2026 Jana Majed Alamer</p>
-        <p><a href="#top">Back to Top</a></p>
-    </footer>
+/* =========================
+   Main Layout
+========================= */
+main {
+    width: 88%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 0 2rem 0;
+}
 
-</body>
-</html>
+/* =========================
+   Hero Section
+========================= */
+.hero-card {
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    box-shadow: 0 0.6rem 1.5rem rgba(76, 52, 120, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f4efff;
+    padding: 0.7rem;
+    border: 0.15rem solid #d9cff8;
+    box-shadow: 0 0.5rem 1.2rem rgba(76, 52, 120, 0.12);
+}
+
+/* =========================
+   Headings and Text
+========================= */
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #3f2a78;
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+    text-shadow: 0.08rem 0.08rem 0.12rem rgba(63, 42, 120, 0.12);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4b2e83;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+    text-shadow: 0.05rem 0.05rem 0.1rem rgba(75, 46, 131, 0.08);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#intro {
+    font-size: 1rem;
+    font-style: italic;
+    color: #7a7290;
+    margin-bottom: 1.2rem;
+}
+
+/* =========================
+   Buttons
+========================= */
+.button-group {
+    margin-top: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 1.3rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #4b2e83;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #3c2369;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #4b2e83;
+    border: 0.12rem solid #4b2e83;
+}
+
+.secondary-btn:hover {
+    background-color: #f1ebff;
+}
+
+/* =========================
+   Content Cards
+========================= */
+.content-card {
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 1.4rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(76, 52, 120, 0.07);
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   Lists
+========================= */
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+dl {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   General Links
+========================= */
+a {
+    color: #4b2e83;
+}
+
+a:hover {
+    color: #7b68b3;
+}
+
+/* =========================
+   Class Selector Example
+========================= */
+.highlight {
+    background-color: #f3ecff;
+    color: #4b2e83;
+    padding: 0.6rem;
+    border-left: 0.3rem solid #8d74d6;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    color: #4b2e83;
+    font-size: 0.95rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 900px) {
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .btn {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        width: 92%;
+    }
+}
