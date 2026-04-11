@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -9,6 +10,7 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
 
 .top-header {
     width: 88%;
@@ -24,6 +26,7 @@ body {
     box-shadow: 0 0.4rem 1.2rem rgba(76, 52, 120, 0.08);
 }
 
+
 .logo {
     background-color: #eee8ff;
     color: #4b2e83;
@@ -35,6 +38,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 nav {
     display: flex;
@@ -53,13 +57,15 @@ nav a:hover {
     color: #7b68b3;
 }
 
-
+/* ========== Main Content ========== */
+/* المساحة الرئيسية داخل الصفحة */
 main {
     width: 88%;
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 0 2rem 0;
 }
+
 
 .hero-card {
     background-color: rgba(255, 255, 255, 0.88);
@@ -73,9 +79,11 @@ main {
     margin-bottom: 1.8rem;
 }
 
+
 .hero-text {
     flex: 1;
 }
+
 
 .hero-image {
     flex: 0 0 18rem;
@@ -105,6 +113,7 @@ h1 {
     text-shadow: 0.08rem 0.08rem 0.12rem rgba(63, 42, 120, 0.12);
 }
 
+
 h2 {
     font-size: 1.4rem;
     font-weight: bold;
@@ -114,11 +123,13 @@ h2 {
     text-shadow: 0.05rem 0.05rem 0.1rem rgba(75, 46, 131, 0.08);
 }
 
+
 p {
     font-size: 1rem;
     margin-bottom: 1rem;
     text-align: left;
 }
+
 
 #intro {
     font-size: 1rem;
@@ -126,6 +137,7 @@ p {
     color: #7a7290;
     margin-bottom: 1.2rem;
 }
+
 
 .button-group {
     margin-top: 1.3rem;
@@ -141,6 +153,7 @@ p {
     transition: 0.3s ease;
 }
 
+
 .primary-btn {
     background-color: #4b2e83;
     color: white;
@@ -149,6 +162,7 @@ p {
 .primary-btn:hover {
     background-color: #3c2369;
 }
+
 
 .secondary-btn {
     background-color: transparent;
@@ -184,6 +198,7 @@ p {
     gap: 2rem;
 }
 
+
 .project-card {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 2rem;
@@ -215,6 +230,7 @@ p {
     font-style: italic;
 }
 
+
 .project-content {
     padding: 1.5rem;
 }
@@ -225,11 +241,13 @@ p {
     margin-bottom: 0.6rem;
 }
 
+
 .project-date {
     color: #7b7293;
     font-style: italic;
     margin-bottom: 0.8rem;
 }
+
 
 .project-btn {
     display: inline-block;
@@ -245,16 +263,6 @@ p {
 .project-btn:hover {
     background-color: #3c2369;
     color: white;
-}
-
-@media (max-width: 900px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-figure img {
-        height: 15rem;
-    }
 }
 
 
@@ -297,9 +305,9 @@ a:hover {
 
 
 footer {
-    text-align: center;  
+    text-align: center;
     padding: 20px;
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;
     margin-top: 40px;
 }
 
@@ -308,23 +316,108 @@ footer p {
     margin: 10px 0;
 }
 
+
 .back-to-top {
     display: inline-block;
     text-decoration: none;
     padding: 6px 12px;
     font-size: 14px;
-
     color: white;
-
-    background-color: #d291bc; 
-    
+    background-color: #d291bc;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
 
 .back-to-top:hover {
-    color: #007BFF; 
+    color: #007BFF;
 }
+
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 0.8rem 2rem rgba(76, 52, 120, 0.08);
+}
+
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    font-weight: bold;
+    color: #4b2e83;
+    margin-bottom: 0.4rem;
+}
+
+
+input,
+textarea {
+    padding: 0.9rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #ddd;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #f7f4ff;
+    color: #2f2f3a;
+}
+
+textarea {
+    min-height: 8rem;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #7b68b3;
+}
+
+
+.send-btn {
+    margin-top: 1.5rem;
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1rem rgba(76, 52, 120, 0.2);
+}
+
+.send-btn:hover {
+    background-color: #3c2369;
+    color: white;
+}
+
+
+.contact-direct {
+    margin-top: 1.5rem;
+}
+
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-figure img {
+        height: 15rem;
+    }
+}
+
 
 @media (max-width: 900px) {
     .hero-card {
@@ -353,6 +446,7 @@ footer p {
     }
 }
 
+
 @media (max-width: 768px) {
     .top-header {
         flex-direction: column;
@@ -377,73 +471,6 @@ footer p {
     }
 }
 
-.contact-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 2rem;
-    padding: 2.5rem;
-    box-shadow: 0 0.8rem 2rem rgba(76, 52, 120, 0.08);
-}
-
-.form-row {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    color: #4b2e83;
-    margin-bottom: 0.4rem;
-}
-
-input,
-textarea {
-    padding: 0.9rem;
-    border-radius: 1rem;
-    border: 0.1rem solid #ddd;
-    font-size: 0.95rem;
-    outline: none;
-    background-color: #f7f4ff;
-    color: #2f2f3a;
-}
-
-textarea {
-    min-height: 8rem;
-    resize: none;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #7b68b3;
-}
-
-.send-btn {
-    margin-top: 1.5rem;
-    background-color: #4b2e83;
-    color: white;
-    border: none;
-    padding: 0.9rem 1.8rem;
-    border-radius: 1.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1rem rgba(76, 52, 120, 0.2);
-}
-
-.send-btn:hover {
-    background-color: #3c2369;
-    color: white;
-}
-
-.contact-direct {
-    margin-top: 1.5rem;
-}
 
 @media (max-width: 768px) {
     .form-row {
