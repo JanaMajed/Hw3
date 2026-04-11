@@ -309,10 +309,13 @@ footer p {
 }
 
 .back-to-top {
-    display: block;       
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+    border: 1px solid #ccc;  
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    font-size: 14px;
 }
 
 .back-to-top:hover {
