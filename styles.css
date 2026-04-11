@@ -4,40 +4,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f7f4ff, #edf2ff);
+    background-color: #f4efff;
     color: #2f2f3a;
     position: relative;
     overflow-x: hidden;
-}
-
-
-.background-circle {
-    position: fixed;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.45);
-    border: 0.08rem solid rgba(170, 150, 220, 0.25);
-    z-index: -1;
-}
-
-.circle-one {
-    width: 13rem;
-    height: 13rem;
-    top: 7rem;
-    left: -3rem;
-}
-
-.circle-two {
-    width: 9rem;
-    height: 9rem;
-    top: 20rem;
-    right: 2rem;
-}
-
-.circle-three {
-    width: 15rem;
-    height: 15rem;
-    bottom: 4rem;
-    right: -4rem;
 }
 
 .top-header {
