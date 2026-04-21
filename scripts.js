@@ -34,6 +34,7 @@ function setupBlockquoteEffect() {
 
         quote.addEventListener("mouseout", function () {
             quote.style.backgroundColor = "";
+             quote.style.color = "#2f2f3a";
             quote.style.fontStyle = "normal";
         });
     }
