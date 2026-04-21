@@ -26,8 +26,10 @@ function setupBlockquoteEffect() {
 
     if (quote) {
         quote.addEventListener("mouseover", function () {
-            quote.style.backgroundColor = "#f5e6d3";
+             quote.style.backgroundColor = "#8e3a64";
+            quote.style.color = "white";  
             quote.style.fontStyle = "italic";
+            
         });
 
         quote.addEventListener("mouseout", function () {
