@@ -24,3 +24,20 @@ var text = document.createTextNode(
 
 window.onload = showLoadTime;
 
+
+
+function setupBlockquoteEffect() {
+    var quote = document.getElementById("quote");
+
+    if (quote) {
+        quote.addEventListener("mouseover", function () {
+            quote.style.backgroundColor = "#f5e6d3";
+            quote.style.fontStyle = "italic";
+        });
+
+        quote.addEventListener("mouseout", function () {
+            quote.style.backgroundColor = "";
+            quote.style.fontStyle = "normal";
+        });
+    }
+}
